@@ -1,0 +1,45 @@
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Noto sans KR", sans-serif;
+	color: #222222;
+	font-size: 1.6rem;
+	font-weight: 300;
+	min-width: 360px;
+}
+#wrap {
+	min-width: 360px;
+}
+a {
+	color: inherit;
+	font-family: "Noto sans KR", sans-serif;
+}
+button {
+	font-size: inherit;
+	font-family: "Noto sans KR", sans-serif;
+}
+input:focus {
+	outline:none;
+}
+
+.more-btn span {
+	position: relative;
+	color: #333333;
+	font-size: 24px;
+	transition: 0.2s ease-out;
+}
+.more-btn span::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 10px;
+	width: 100px;
+	bottom: 0;
+	background: url(../img/btn-arrow.svg) no-repeat right / cover;
+}
+.more-btn:hover span {
+	box-sizing: border-box;
+	padding-left: 6px;
+}
